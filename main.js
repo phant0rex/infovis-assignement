@@ -40,5 +40,10 @@ Promise.all([
     scatterplotCountries.forEach(el => {
         renderScatterplot(el);
     })
+
+    renderSanitationStatistic("France")
+    renderSanitationStatistic("Afghanistan")
+    renderSanitationStatistic("Germany")
+    renderSanitationStatistic("United States")
 });
 

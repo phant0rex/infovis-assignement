@@ -1,30 +1,88 @@
-body {
-    background-color: white;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
+body {
+    background-color: white;
+    margin: 0;
 
-#gdp-mortality-scatterplot {
-    max-width: 50%;
-    height: 450px;
-    max-height: 100%;
+}
+
+header {
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 6fr 4fr;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#sanitation-section {
+    grid-column: 1;
+    grid-row: 2;
     margin: 0 auto;
     padding: 2rem;
 }
 
+#sanitation-views {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+#butterfly-chart {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#gdp-mortality-scatterplot {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 auto;
+    padding: 0rem 2rem 0rem 2rem;
+
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 3fr 7fr;
+}
+
 #scatter-section {
-    width: 100%;
-    height: 30%;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.section-intro {
+    margin: 0;
+    padding: 0;
+}
+
+.controls {
+    grid-column: 2;
+    grid-row: 1 / span 2;
 }
 
 #scatterplot-chart {
-    width: 100%;
-    height: 70%;
+    grid-column: 1;
+    grid-row: 2;
     position: relative;
 }
 
 #scatterplot-chart svg {
     width: 100%;
-    display: block; }
+}
 
 #line-container {
     stroke-width: 2px;
