@@ -103,7 +103,8 @@ body {
 }
 
 #view-sanitation-btn:hover {
-    background-color: #000;
+    background-color: #7b7b7b;
     border-color: #d4d4d8;
     color: #ccc;
+    transition: all 0.2s ease;
 }
